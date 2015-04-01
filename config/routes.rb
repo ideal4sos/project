@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Shoppe::Engine => "/shoppe"
   resources :contacts
   get '/about' => 'pages#about'
   root 'pages#home'
